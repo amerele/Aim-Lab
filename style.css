@@ -8,17 +8,16 @@ body{
     height: 100vh;
     position: absolute;
     top: 0;
-    background: green;
+    background: no-repeat center url('./media/the_range.jpg');
+    background-size: cover;
     display: flex;
 }
 .target{
-    background-color: red;
-    border-color: crimson;
+    background: radial-gradient(circle at 20px 20px, red, #000);
     border-radius: 50%;
     color: transparent;
-    width: 45px;
-    content:'a';
-    height: 45px;
+    width: 55px;
+    height: 55px;
     cursor:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='40' height='48' viewport='0 0 100 100' style='fill:black;font-size:24px;'><text y='50%'>🔫</text></svg>") 16 0,auto; /*!emojicursor.app*/
 }
 .start{
@@ -27,4 +26,15 @@ body{
     font-size: 26pt;
     cursor:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='40' height='48' viewport='0 0 100 100' style='fill:black;font-size:24px;'><text y='50%'>🔫</text></svg>") 16 0,auto; /*!emojicursor.app*/
 
+}
+
+.stats{
+    width: 350px;
+    position: fixed;
+    display: flex;
+    left : calc(50% - 170px);
+    justify-content: space-between;
+    padding: 10px;
+    background-color: #2d3769;
+    color: whitesmoke;
 }
