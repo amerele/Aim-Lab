@@ -77,7 +77,7 @@ const shoot = (target) =>{
 }
 const misses = () =>{
     m++;
-    accuracy.innerHTML = `Accuracy = ${(s/(m-1) * 100).toFixed(0)}%`
+    accuracy.innerHTML = `Accuracy = ${100-(m-1) / 100 * s).toFixed(0)}%`
 }
 
 start.onclick = init
