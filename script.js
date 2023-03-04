@@ -7,15 +7,15 @@ let hits = document.querySelector('#shots')
 let accuracy = document.querySelector('#accuracy');
 
 let s = 1;
-let m = 0;
+let m = -1;
 let acc = 100;
 const height = window.innerHeight;
 const width = window.innerWidth;
 
 
 const init= () => {
-    s = 1;
-    m = 0;
+    s = 0;
+    m = -1
     start.style.display = 'none';
     gameStart()
     startCount(59)
@@ -77,7 +77,7 @@ const shoot = (target) =>{
 }
 const misses = () =>{
     m++;
-    accuracy.innerHTML = `Accuracy = ${ Math.round(100 +(s/m-1)*100).toFixed(0)}%`
+    accuracy.innerHTML = `Accuracy = ${((s*100)/m || 0).toFixed(0)}%`
 }
 
 start.onclick = init
