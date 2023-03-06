@@ -27,5 +27,5 @@ Try again to see if you can be better next time...
 
 🎉To see my project on live, please access:
 
-[https://amerele.github.io/Aim-lab/](https://amerele.github.io/Aim-Lab/)
+[https://amerele.github.io/Aim-Lab/](https://amerele.github.io/Aim-Lab/)
 
